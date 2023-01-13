@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    font-style: normal;
+    src: url('./assets/fonts/proximanova-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./assets/fonts/proximanova-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    font-style: normal;
+    src: url('./assets/fonts/proximanova-semibold.woff2') format('woff2');
+}
+
+:root {
+    --font-12: 12px;
+    --font-14: 14px;
+    --font-18: 18px;
+    --font-24: 24px;
+    --font-28: 28px;
+    --font-46: 46px;
+    --blue: #3483fa;
+    --dark: #333333;
+    --gray-light: #eeeeee;
+    --gray-bold: #666666;
+    --gray: #999999;
+    --yellow: #ffe600;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Proxima Nova', -apple-system, 'Helvetica Neue', Helvetica,
+        Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--gray-light);
+}
+
+.view {
+    width: 100%;
+    max-width: 968px;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+a,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}

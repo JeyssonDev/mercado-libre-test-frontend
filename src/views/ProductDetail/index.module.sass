@@ -1,0 +1,53 @@
+.mainContainer
+  display: grid
+  grid-template-columns: 65% 35%
+  width: 100%
+  @media (max-width: 768px)
+    grid-template-columns: repeat(1, 1fr)
+
+.imageContainer
+  height: 680px
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    height: 100%
+    object-fit: none
+
+.txtContainer
+  padding: 32px 32px 0 16px
+  @media (max-width: 768px)
+    padding: 32px
+
+.status
+  font-size: var(--font-14)
+  margin-bottom: 16px
+
+.title
+  font-size: var(--font-24)
+
+.price
+  font-size: var(--font-46)
+  margin: 32px 0
+
+.btnBuy
+  background-color: var(--blue)
+  color: var(--white)
+  font-size: var(--font-18)
+  width: 100%
+  border: none
+  height: 36px
+  border-radius: 4px
+
+.descriptionContainer
+  margin-bottom: 40px
+  padding: 32px
+  @media (max-width: 768px)
+    margin-top: 0
+.descriptionTitle
+  font-size: var(--font-28)
+
+.descriptionText
+  font-size: var(--font-16)
+  padding: 32px 0
+  white-space: pre-line

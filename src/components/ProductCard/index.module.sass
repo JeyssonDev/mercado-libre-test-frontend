@@ -1,0 +1,61 @@
+.cardContainer
+  display: grid
+  grid-template-columns: 180px auto 176px
+  grid-gap: 16px
+  height: 212px
+  padding: 16px
+  border-bottom: 1px solid var(--gray-light)
+  @media (max-width: 768px)
+    grid-template-columns: 40% 60%
+
+.imageContainer
+  height: 100%
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  img
+    width: 180px
+  @media (max-width: 768px)
+    grid-row-start: 1
+    grid-row-end: 3
+
+.textContainer
+  height: 100%
+  width: 100%
+  padding: 16px 0
+
+.price
+  font-size: var(--font-24)
+  display: flex
+  align-items: center
+  img
+    margin-left: 4px
+  @media (max-width: 768px)
+    font-size: var(--font-18)
+
+.title
+  font-size: var(--font-18)
+  @media (max-width: 768px)
+    font-size: var(--font-14)
+
+.status
+  @media (max-width: 768px)
+    font-size: var(--font-14)
+
+.sellerContainer
+  height: 100%
+  width: 100%
+  @media (max-width: 768px)
+    grid-column-start: 2
+    grid-column-end: 3
+    grid-row-start: 2
+    grid-row-end: 3
+
+.seller
+  font-size: var(--font-12)
+  margin-top: 32px
+  color: var(--gray-bold)
+  @media (max-width: 768px)
+    margin-top: 0
